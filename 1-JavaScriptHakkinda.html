@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        //java script kodları bu alan içine yazılır.
+        function butonaTikla()
+        {
+            alert("Merhaba Dünya");
+        }
+
+    </script>
+</head>
+<body>
+    <p>
+        Javascript, betik(script) dilidir. (java ile karıştırmayınız java server side bir programlama dilidir.) Derlenmeye ihtiyaç yoktur tarayıcı tarafından yorumlanır. Düz html sayfalarına dinamiklik katmak için kullanılır.
+    </p>
+    <h2>
+        Java Script Kodlarının yazılması için
+    </h2>
+    <ul>
+        <li>Elementin içine doğrudan yazılabilir.</li>
+        <li>Head bloklarının arasında script tagleri arasında yazılabilir</li>
+        <li>Sayfanın body bitişinden önce script tagleri arasına yazılır.</li>
+        <li>External javascript dosyası içinde.</li>
+    </ul>
+    <strong>
+        Sayfanın açılış hızını yavaşlatmaması için body bloğunun bitişinden hemen önce yazılması önerilir.
+    </strong>
+    <h3>1.Element içine tanımlama</h3>
+    <button type="button" onclick="alert('Butona Tıklandı!')">Tıkla!</button>
+
+    <h3>2.Head bloğuna script tagi ile tanımlama.</h3>
+    <input type="button" onclick="butonaTikla()" value="Buraya da tıklaaaağğğ!" />
+
+    <h3>3.Body'nin üzerinde script tagleri ile tanımlama.</h3>
+    <button type="button" onclick="konsoldaGoster()"> Konsola Mesaj Yazdır</button>
+
+    <h4>External js file</h4>
+    <button type="button" onclick="ekranaYazdir()">Ekrana Yazdır! </button>
+
+    <script>
+        function konsoldaGoster()
+        {
+            console.log("Bu yazı f12 ile incele ekranını açtığınızda console tab'ında görünecek");
+        }
+    </script>
+    <script src="js/myJavascript.js"></script>
+</body>
+</html>

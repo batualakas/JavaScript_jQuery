@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<h1>DİZİLER(ARRAY)</h1>
+    <p>
+        
+
+    </p>
+    <script>
+        var dizi1 = [1, 1.2, "elma", true] // aynı tip veri tutulmasına gerek yok. farklı veriler tutabilir.
+        var dizi2 = new Array(3);
+        dizi2[0] = "batu";
+        dizi2[1] = "Eray";
+        dizi2[2] = "Ork";
+        dizi2[3] = "Eren";
+        console.log(dizi2);
+
+        var dizi4 = [];
+        // push : dizinin içine eleman eklemek için
+        dizi4.push(1);
+        dizi4.push(2);
+        dizi4.push(3);
+        
+        console.log(dizi4);
+
+        // 1-15' e kadar sayıları bir diziye ekleyiniz.
+        var dizi5 = [];
+        for (var i = 1; i < 16; i++) {
+            dizi5.push(i);
+            console.log(dizi5); // bi garip durdu
+        }
+        // sort (sıralama)
+        console.log(dizi4.sort().reverse());
+        // concat ( iki diziyi birleştirme)
+        console.log(dizi2.concat(dizi1)); 
+        // lenght
+        console.log(dizi4.length); // 3 çünkü uzunluk 3 
+        // indexOf(x)
+        console.log(dizi2.indexOf("Ork")); // 2 çünkü dizideki index'i 2. 
+        // splice
+        
+        dizi2.splice(2, 1); // 2. değerden başla 1 değer sil demek yani. ilk kısım başlangıç indexi. 2. kısım kaç adet eleman silineceği.
+        console.log(dizi2);
+
+    </script>
+</body>
+</html>

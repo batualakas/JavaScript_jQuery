@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Eventler</h1>
+    <p>
+        attribute olarak elementlerin eventlerini tanımlama yapabiliriz.
+        onclick : bir elemente basıldığı zaman
+        onchange: bir değişiklik olduğunda, radio,select vb vb
+    </p>
+    <a onclick="tikla()" href="#" class="btn btn-primary"> Tıkla!!  </a>
+    <p onclick="tikla()"> Buraya Tıkla!</p>
+
+    <select id="ddIller" name="dropdownIller" onchange="secimiAl(this)">
+        <option value="06">Ankara</option>
+        <option value="34">İstanbul</option>
+        <option value="35">İzmir</option>
+    </select>
+
+    <script>
+        function tikla() {
+            alert("Merhaba");
+        }
+        function secimiAl(e) {
+            debugger
+            var secilen = e.value;
+            console.log(secilen);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

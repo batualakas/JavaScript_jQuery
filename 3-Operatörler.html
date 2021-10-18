@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Operatörler</h1>
+    <p>
+        Aritmetik operatörler : +,  -,  /, * , % <br />
+        Karşılaştırma operatörleri : > , < , >= , <= i, !=, ==, !==(Kesin eşit değil) , === (kesin eşit) <br />
+        Atama operatörleri : =, +=, -=, *=, /= <br />
+        Mantıksla operatörler : && , ||, <br />
+        Arttırma/Azaltma operatörleri : ++,--
+
+
+    </p>
+    <script>
+        var a = 10;
+        var b = "10"
+
+        var esitMi = a == b; // true sonuc döndü fakat aslında eşit değil.
+        var kesinEsitMi = a === b; // false değer döndü.çünkü veri tipleri aynı değil.
+
+        console.log(esitMi); // true sonuc döndü
+        console.log(kesinEsitMi);
+
+    </script>
+</body>
+</html>

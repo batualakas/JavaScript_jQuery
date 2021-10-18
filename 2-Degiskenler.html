@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Değişkenler</h1>
+    <p>
+        var degiskenAdi= deger;
+    </p>
+    <h2>Değişken veri tipleri</h2>
+    <ul>
+        <li>Number</li>
+        <li>String</li>
+        <li>Boolean</li>
+        <li>Null</li>
+        <li>Undefined</li>
+        <li>Dizi(ARRAY)</li>
+    </ul>
+    <script language="javascript" type="text/javascript">
+        var sayi1 = 10;
+        var isim = "Batu Alakaş";
+        var dogruMu = true; //true/false
+        // büyük küçük harf duyarlıdır.
+        //camel case tanımlama yapıyoruz.
+        var harf = "A";
+        var harf2 = 'B';
+        var tanimsizDegisken; // undefined.
+        var ogrenci = null;
+        var isimler = new Array(3);
+        isimler[0] = "Batu"
+        isimler[1] = "Orkun"
+        isimler[2] = "Eray"
+        var iller = ["ankara", "istanbul", "izmir"];
+        var ogrenci1 = {
+            ad: "Batu",
+            soyad: "Alakaş",
+            yas: 30,
+            mezunMu: true
+        };
+        var ogrenciler = [
+            {
+                ad: "Batu",
+                soyad: "Alakaş",
+                yas: 27,
+                mezunMu: false
+            },
+        {
+                ad: "Eray",
+                soyad: "Ergin",
+                yas: 30,
+                mezunMu: true
+            },
+        {
+                ad: "Orkun",
+                soyad: "ince",
+                yas: 31,
+                mezunMu: true
+            }
+        ];
+            
+
+        console.log(typeof (sayi1));
+        console.log(typeof (isim));
+        console.log(typeof (dogruMu));
+        console.log(typeof (harf));
+        console.log(typeof (harf2));
+        console.log(typeof (ogrenci));
+        console.log(typeof (isimler));
+        console.log(typeof (iller));
+        console.log(typeof (ogrenci1));
+        console.log(typeof (ogrenciler));
+
+        //---------------
+
+        var sayi; // undefined
+        sayi = 10; // number
+        sayi = " nur" // string
+        //--------------- Çevirme işlemi convert()
+        var sayi2 = "20";
+
+        var sayisalSayi2 = Number(sayi2)
+
+        console.log(sayisalSayi2 - 40);
+
+        var dolarKuru = "9.26";
+
+        var dolarKuru1 = Number(dolarKuru); // 9.26
+
+        console.log(dolarKuru1*150);
+
+        //parseInt, parseFloat 
+
+        console.log(parseInt(dolarKuru)); // 9 olarak geliyo 9.26 olan değer
+        console.log(parseFloat(dolarKuru)); // 9.26 olarak geliyo virgüllü kısmıyla.
+        console.log(Number("nur")); // NaN değeri dönüyor : not an number
+        console.log(sayisalSayi2.toString());
+
+        //number.isnan()
+        var s = Number("12asd"); // Nan
+        console.log(Number.isNaN(s)); // true.. sayı değil midir ? evet değildir=gelen sonuç
+    </script>
+
+
+
+</body>
+</html>
